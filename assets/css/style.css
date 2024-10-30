@@ -1,0 +1,110 @@
+/* #region    ========== Root ========== */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffb900;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    font-size: 1.6rem;
+}
+/* #endregion ========== Root ========== */
+
+/* #region    ========== Common ========== */
+.content {
+    width: 1170px;
+    max-width: calc(100% - 27px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    min-width: 118px;
+    padding: 0 16px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 50px;
+    border-radius: 24.5px;
+    background: #171100;
+}
+/* #endregion ========== Common ========== */
+
+/* #region    ========== Header ========== */
+.header {
+    background: #fffcf4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+
+.header .nav ul {
+    display: flex;
+}
+
+.header .nav a {
+    position: relative;
+    padding: 8px 21px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+}
+
+.header .nav a:hover,
+.header .nav li.active a {
+    color: #171100;
+    text-shadow: 1px 0 0 #171100;
+    /* font-weight: 600; */
+}
+
+.header .nav li.active a::after {
+    position: absolute;
+    content: "";
+    left: 21px;
+    bottom: 5px;
+    display: block;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
+
+.header .sign-up-btn {
+    min-width: 144px;
+}
+
+.header .action {
+    margin-left: 49px;
+}
+
+/* #endregion ========== Header ========== */
